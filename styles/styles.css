@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.bg-color{
+  background-color:rgba(26, 11, 46, 1);
+}
+
+.navbar{
+   justify-content: space-between;
+   height: 92px;
+   margin: 0 auto;
+}
+
+.site-name{
+  font-size: 1.9rem;
+  
+}
+
+
+.tech{
+  color: #FFFFFF;
+}
+.wave{
+  background: linear-gradient( rgba(247, 233, 63, 1),rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+  -webkit-text-fill-color: transparent; 
+   -webkit-background-clip: text; 
+  
+ 
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  align-items: center;
+ 
+}
+
+.navbar, .banner{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.btn-primary{
+  border-radius: 10000px;
+  width: 135px;
+  height: 44px;
+ margin-top: 24px;
+    background: linear-gradient( to right, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));  
+
+}
+
+.subscribe{
+  font-weight: 600;
+  color: #FFFFFF;
+ 
+
+}
