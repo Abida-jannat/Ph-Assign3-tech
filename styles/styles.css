@@ -18,8 +18,10 @@
 
 .navbar{
    justify-content: space-between;
+   align-items: center;
    height: 92px;
    margin: 0 auto;
+   padding: 1rem;
 }
 
 .site-name{
@@ -39,12 +41,15 @@
   
  
 }
+
+
 .nav-item{
   list-style: none;
   margin-right: 30px;
 }
 
 .nav-link{
+  justify-content: space-between;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -66,6 +71,15 @@
     background: linear-gradient( to right, rgba(247, 233, 63, 1),
      rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));  
 
+}
+
+.btn-primary:hover img {
+    transform: translateX(8px); 
+    transition: transform 0.3s ease;
+}
+
+.btn-primary img {
+    transition: transform 0.3s ease; 
 }
 
 .subscribe{
@@ -118,6 +132,25 @@
 
 }
 
+.new-btn{
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  background-color: #00FF88;
+    top:20px;
+    right: -5px;
+   border: none;
+  cursor: pointer;
+  border-radius: 1000px;
+ 
+}
+.new-btn span{
+  color: black;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+
 .message{
   width: 15px;
   height: 15px;
@@ -133,6 +166,7 @@
 }
 
 .hero-circle {
+  position: relative;
   width:350px;
   height: 350px;
   margin: 0 auto;
@@ -145,11 +179,20 @@
   width: 100%;
   height: 100%;
 }
+.circle {
+    animation: breathe 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+@keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+}
 .microphone{
   position: absolute;
   width: 120px;
   margin-top: 75px;
-  
+   
 }
 
 .banner-content{
@@ -221,3 +264,180 @@
      font-size: 16px;
      font-weight: 400;
 }
+
+
+.conatainer{
+  background-color: #230E3D;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 7.5rem 12.5rem;
+  
+}
+
+.title{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 150px;
+ 
+}
+
+.card{
+  display: grid;
+  text-align: left;
+  gap: 1.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(200px, auto));
+}
+.big-layout{
+  grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4) ;
+  padding: 2.5rem;
+  
+}
+.wide-layout{
+  grid-column: span 2;
+  grid-row: span 1;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 2.5rem;
+}
+.side-layout{
+  grid-column: span 2;
+  grid-row: span 2;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 2.5rem;
+}
+.normal-layout{
+   grid-column: span 1;
+  grid-row: span 2;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 2.5rem;
+
+}
+.card img{
+  margin-bottom: 1rem;
+}
+
+.features{
+  background: rgba(26, 11, 46, 1);
+  height: 1100px;
+   padding: 50px 200px;
+}
+
+.feature-title{
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.video-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 250px;
+
+
+}
+
+.video-card{
+  border-radius: 15px;
+  overflow: hidden;
+  color: #FFFFFF;
+  width: 300px;
+
+}
+
+.card-content{
+   padding: 20px;
+   background: #230E3D;
+  
+}
+
+.host-title{
+   height: 80px;
+   text-align: center;
+   margin-top: 80px;
+   font-size: 20px;
+   font-weight: 700;
+   color: #FFFFFF;
+   gap: 20px;
+}
+
+.host-content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1100px;
+  height: 200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: #230E3D;
+  padding: 40px;
+ 
+}
+
+.host-img{
+  width: 150px;
+  height: 150px;
+}
+
+.host-details{
+   height: 40px;
+   margin-bottom: 150px;
+ text-align: left;
+ padding: 20px;
+ color: #FFFFFF
+}
+
+.footer-container{
+  padding: 60px 20px;
+  background-image: url(../assets/footer-bg.png);
+  text-align: center;
+ color: #FFFFFF;
+
+  
+}
+.footer-content{
+  width: 1580px;
+}
+.footer-name{
+  font-size: 60px;
+  margin-bottom: 30px;
+ 
+}
+ .social-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+ }
+ .social-link{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+ }
+ .social-link img{
+  width: 24px;
+  height: auto;
+ }
+ .copyright{
+  font-size: 14px;
+ }
+@media screen and (max-width:576px){
+     .rate-container{
+      grid-column: span 2;
+     }
+}
+   
